@@ -1,3 +1,4 @@
+package es.upm.miw.voting.web.presentation.frontController;
 public class FrontController {
     private Dispatcher dispatcher;
 
