@@ -1,3 +1,4 @@
+package es.upm.miw.voting.web.presentation.views;
 public class ErrorView implements View {
 
     @Override
