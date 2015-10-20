@@ -1,4 +1,4 @@
-package es.upm.miw.pd.voting;
+package es.upm.miw.voting;
 
 public class Server {
 

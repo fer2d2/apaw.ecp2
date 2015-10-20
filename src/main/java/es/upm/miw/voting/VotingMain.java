@@ -1,4 +1,4 @@
-package es.upm.miw.pd.voting;
+package es.upm.miw.voting;
 
 import es.upm.miw.pd.voting.solution.business.models.daos.DaoFactory;
 import es.upm.miw.pd.voting.solution.business.models.daos.memory.DaoFactoryMemory;
