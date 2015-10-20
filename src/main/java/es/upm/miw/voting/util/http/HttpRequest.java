@@ -1,4 +1,4 @@
-package es.upm.miw.web.http;
+package es.upm.miw.voting.util.http;
 
 import java.util.HashMap;
 import java.util.Map;
