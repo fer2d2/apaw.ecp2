@@ -10,6 +10,7 @@ import es.upm.miw.voting.rest.business.views.VoteTransfer;
 import es.upm.miw.voting.rest.data.models.daos.DaoFactory;
 import es.upm.miw.voting.rest.data.models.daos.ThemeDao;
 import es.upm.miw.voting.rest.data.models.daos.VoteDao;
+import es.upm.miw.voting.rest.data.models.repository.ThemeRepository;
 
 
 public class BusinessController {
@@ -32,21 +33,10 @@ public class BusinessController {
         List<ThemeTransfer> themeTransfers = new ArrayList<ThemeTransfer>();
         
         for(Theme theme : themes) {
-            themeTransfers.add(new ThemeTransfer(theme.getName(), this.themeAverage(theme)));
+            themeTransfers.add(new ThemeTransfer(theme.getName(), new ThemeRepository().themeAverage(theme)));
         }
         
         return themeTransfers;
-    }
-
-    private double themeAverage(Theme theme) {
-        List<Vote> votes = DaoFactory.getFactory().getVoteDao().findByTheme(theme);
-        
-        double average = 0;
-        for (Vote vote : votes) {
-            average += vote.getVote();
-        }
-        
-        return (average / votes.size());
     }
     
     public List<String> getThemes() {
