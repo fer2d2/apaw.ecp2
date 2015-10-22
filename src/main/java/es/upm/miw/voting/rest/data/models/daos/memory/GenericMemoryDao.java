@@ -1,6 +1,10 @@
 package es.upm.miw.voting.rest.data.models.daos.memory;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
+
+import es.upm.miw.voting.rest.data.models.daos.GenericDao;
 
 public abstract class GenericMemoryDao<T, ID> implements GenericDao<T, ID> {
 

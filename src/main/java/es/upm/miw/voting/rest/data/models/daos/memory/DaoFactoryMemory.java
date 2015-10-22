@@ -1,5 +1,9 @@
 package es.upm.miw.voting.rest.data.models.daos.memory;
 
+import es.upm.miw.voting.rest.data.models.daos.DaoFactory;
+import es.upm.miw.voting.rest.data.models.daos.ThemeDao;
+import es.upm.miw.voting.rest.data.models.daos.VoteDao;
+
 public class DaoFactoryMemory extends DaoFactory {
 
     private ThemeMemoryDao themeDao;
