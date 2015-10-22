@@ -1,4 +1,4 @@
-package es.upm.miw.voting;
+package es.upm.miw.voting.application;
 
 import es.upm.miw.voting.util.http.HttpRequest;
 import es.upm.miw.voting.util.http.HttpResponse;
