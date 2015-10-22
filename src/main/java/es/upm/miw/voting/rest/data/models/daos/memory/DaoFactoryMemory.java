@@ -1,7 +1,8 @@
 package es.upm.miw.voting.rest.data.models.daos.memory;
+
 public class DaoFactoryMemory extends DaoFactory {
 
-    private ThemeDao themeDao;
+    private ThemeMemoryDao themeDao;
 
     private VoteDao voteDao;
 

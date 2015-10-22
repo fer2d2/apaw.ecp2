@@ -1,4 +1,8 @@
 package es.upm.miw.voting;
+
+import es.upm.miw.voting.util.http.HttpRequest;
+import es.upm.miw.voting.util.http.HttpResponse;
+
 public class Client {
 
     public HttpResponse send(HttpRequest request) {

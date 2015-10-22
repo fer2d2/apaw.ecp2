@@ -1,5 +1,11 @@
 package es.upm.miw.voting;
 
+import es.upm.miw.voting.util.http.HttpMethod;
+import es.upm.miw.voting.util.http.HttpRequest;
+import es.upm.miw.voting.util.http.HttpResponse;
+import es.upm.miw.voting.util.http.HttpStatus;
+import es.upm.miw.voting.web.presentation.frontController.FrontController;
+
 public class Server {
 
     public HttpResponse send(HttpRequest request) {
