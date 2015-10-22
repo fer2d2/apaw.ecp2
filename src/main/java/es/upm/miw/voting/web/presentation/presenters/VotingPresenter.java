@@ -15,7 +15,8 @@ public class VotingPresenter {
     }
 
     public void voteTheme(Model model) {
-        new BusinessController().voteTheme(new VoteTransfer(model.get("themeName").toString(), (int) model.get("value")));
+        VoteTransfer voteModel = new VoteTransfer((String) model.get("themeName"), (int) model.get("value"));
+        new BusinessController().voteTheme(voteModel);
     }
     
     private List<String> getAverages(Model model) {

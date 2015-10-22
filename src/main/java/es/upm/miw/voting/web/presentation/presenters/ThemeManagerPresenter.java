@@ -12,7 +12,7 @@ public class ThemeManagerPresenter {
     }
 
     public void createTheme(Model model) {
-        new BusinessController().createTheme(model.get("themeName").toString());
+        new BusinessController().createTheme((String) model.get("themeName"));
     }
 
     private List<String> showThemes(Model model) {
