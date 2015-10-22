@@ -4,7 +4,7 @@ import java.util.List;
 
 import es.upm.miw.voting.rest.business.models.Theme;
 
-public interface ThemeDao {
+public interface ThemeDao extends GenericDao<Theme, Integer> {
 
     Theme findByName(String themeName);
 
