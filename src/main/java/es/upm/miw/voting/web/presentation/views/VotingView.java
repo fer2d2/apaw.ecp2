@@ -8,7 +8,8 @@ public class VotingView implements View {
     @Override
     public void show(Model model) {
         OutputGenerator outputGenerator = new OutputGenerator();
-        outputGenerator.printListWithSubtitle("Temas", "ThemeTransfer", model.get("votes"));
+
+        outputGenerator.printList("Voting Page", "Temas", model.get("votes"));
     }
 
 }

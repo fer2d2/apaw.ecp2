@@ -24,7 +24,7 @@ public class VotingPresenter {
 
         List<String> averages = new ArrayList<>();
         for (ThemeTransfer themeTransfer : themeTransfers) {
-            averages.add("[themeName=" + themeTransfer.getThemeName() + ", average=" + themeTransfer.getThemeAverage() + "]");
+            averages.add("ThemeTransfer [themeName=" + themeTransfer.getThemeName() + ", average=" + themeTransfer.getThemeAverage() + "]");
         }
 
         return averages;

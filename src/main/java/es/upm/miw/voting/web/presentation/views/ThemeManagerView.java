@@ -8,7 +8,7 @@ public class ThemeManagerView implements View {
     @Override
     public void show(Model model) {
         OutputGenerator outputGenerator = new OutputGenerator();
-        outputGenerator.printList("Temas", model.get("themes"));
+        outputGenerator.printList("Theme Manager Page", "Temas", model.get("themes"));
     }
 
 }
