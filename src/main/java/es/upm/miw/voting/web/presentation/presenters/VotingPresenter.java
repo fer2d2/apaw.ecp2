@@ -5,6 +5,7 @@ import java.util.List;
 
 import es.upm.miw.voting.rest.business.controllers.BusinessController;
 import es.upm.miw.voting.rest.business.views.ThemeTransfer;
+import es.upm.miw.voting.rest.business.views.VoteTransfer;
 import es.upm.miw.voting.web.presentation.models.Model;
 
 public class VotingPresenter {
@@ -14,7 +15,7 @@ public class VotingPresenter {
     }
 
     public void voteTheme(Model model) {
-        new BusinessController().voteTheme(model.get("themeName").toString(), (int) model.get("value"));
+        new BusinessController().voteTheme(new VoteTransfer(model.get("themeName").toString(), (int) model.get("value")));
     }
     
     private List<String> getAverages(Model model) {
