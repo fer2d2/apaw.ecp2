@@ -7,7 +7,7 @@ import java.util.List;
 import es.upm.miw.voting.rest.business.models.Theme;
 import es.upm.miw.voting.rest.data.models.daos.ThemeDao;
 
-public class ThemeMemoryDao extends GenericMemoryDao<Theme, Integer> implements ThemeDao {
+public class ThemeMemoryDao extends GenericMemoryDao<Theme, Integer>implements ThemeDao {
 
     public ThemeMemoryDao() {
         this.setMap(new HashMap<Integer, Theme>());

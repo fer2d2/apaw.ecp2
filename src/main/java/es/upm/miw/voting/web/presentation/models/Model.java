@@ -1,4 +1,5 @@
 package es.upm.miw.voting.web.presentation.models;
+
 import java.util.HashMap;
 import java.util.Map;
 

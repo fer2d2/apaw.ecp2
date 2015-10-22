@@ -3,8 +3,9 @@ package es.upm.miw.voting.rest.business.views;
 public class VoteTransfer {
 
     private String themeName;
+
     private int voteValue;
-    
+
     public VoteTransfer(String themeName, int voteValue) {
         this.themeName = themeName;
         this.voteValue = voteValue;
@@ -17,6 +18,5 @@ public class VoteTransfer {
     public int getVoteValue() {
         return voteValue;
     }
-    
 
 }

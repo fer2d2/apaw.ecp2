@@ -1,7 +1,7 @@
 package es.upm.miw.voting.rest.data.models.daos.memory;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import es.upm.miw.voting.rest.data.models.daos.GenericDao;

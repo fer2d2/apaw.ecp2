@@ -8,7 +8,7 @@ import es.upm.miw.voting.rest.business.models.Theme;
 import es.upm.miw.voting.rest.business.models.Vote;
 import es.upm.miw.voting.rest.data.models.daos.VoteDao;
 
-public class VoteMemoryDao extends GenericMemoryDao<Vote, Integer> implements VoteDao {
+public class VoteMemoryDao extends GenericMemoryDao<Vote, Integer>implements VoteDao {
 
     public VoteMemoryDao() {
         this.setMap(new HashMap<Integer, Vote>());

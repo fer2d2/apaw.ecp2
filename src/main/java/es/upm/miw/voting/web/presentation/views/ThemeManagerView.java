@@ -1,7 +1,5 @@
 package es.upm.miw.voting.web.presentation.views;
 
-import java.util.List;
-
 import es.upm.miw.voting.util.IO.OutputGenerator;
 import es.upm.miw.voting.web.presentation.models.Model;
 

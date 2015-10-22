@@ -1,4 +1,5 @@
 package es.upm.miw.voting.rest.business.models;
+
 public class Vote {
 
     private int id;

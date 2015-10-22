@@ -36,11 +36,11 @@ public class Dispatcher {
         String nextView = request.getPath() + "View";
         String action = request.getParams().get("action");
         String themeName = request.getParams().get("themeName");
-        
+
         switch (presenter) {
         case "VotingPresenter":
             VotingPresenter votingPresenter = new VotingPresenter();
-            
+
             if ("voteTheme".equals(action)) {
                 String value = request.getParams().get("value");
                 model.put("value", Integer.parseInt(value));
@@ -50,7 +50,7 @@ public class Dispatcher {
             } else {
                 model.put("error", "Acción no permitida: " + action);
             }
-            
+
             break;
         case "ThemeManagerPresenter":
             ThemeManagerPresenter themeManagerPresenter = new ThemeManagerPresenter();
@@ -59,11 +59,11 @@ public class Dispatcher {
             if ("createTheme".equals(action)) {
                 themeManagerPresenter.createTheme(model);
                 model.put("themes", themeManagerPresenter.process(model));
-                
+
             } else {
                 model.put("error", "Acción no permitida: " + action);
             }
-            
+
             break;
         }
         this.show(nextView, model);
@@ -71,7 +71,7 @@ public class Dispatcher {
 
     private void show(String nextView, Model model) {
         View view;
-        
+
         switch (nextView) {
         case "VotingView":
             view = new VotingView();
