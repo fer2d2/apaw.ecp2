@@ -2,7 +2,7 @@ package es.upm.miw.voting.web.presentation.presenters;
 
 import java.util.List;
 
-import es.upm.miw.voting.rest.business.controllers.BusinessController;
+import es.upm.miw.voting.rest.business.controllers.ThemeController;
 import es.upm.miw.voting.web.presentation.models.Model;
 
 public class ThemeManagerPresenter {
@@ -12,10 +12,10 @@ public class ThemeManagerPresenter {
     }
 
     public void createTheme(Model model) {
-        new BusinessController().createTheme((String) model.get("themeName"));
+        new ThemeController().createTheme((String) model.get("themeName"));
     }
 
     private List<String> showThemes(Model model) {
-        return new BusinessController().getThemes();
+        return new ThemeController().getThemes();
     }
 }
