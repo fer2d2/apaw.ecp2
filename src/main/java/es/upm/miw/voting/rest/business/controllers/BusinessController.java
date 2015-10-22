@@ -41,7 +41,7 @@ public class BusinessController {
     private double themeAverage(Theme theme) {
         List<Vote> votes = DaoFactory.getFactory().getVoteDao().findByTheme(theme);
         
-        int average = 0;
+        double average = 0;
         for (Vote vote : votes) {
             average += vote.getVote();
         }
